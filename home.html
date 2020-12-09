@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Castoro:ital@0;1&family=Great+Vibes&family=Lobster&display=swap" rel="stylesheet">
+    <!--Bootstrap CSS CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--CSS File-->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>My Library</h1>
+        <p id="subHeading">my local storage. by: King-Liven K. Acheampong</p>
+    </header>
+    <main>
+        <button class="new btn btn-primary btn-lg">Add a new book</button>
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Pages</th>
+                        <th>Read</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td>TitleData</td>
+                    <td>AuthorData</td>
+                    <td>PagesData</td>
+                    <td>ReadData</td>
+                    <td><button class="btn btn-outline-secondary">Change Read Stats</button></td>
+                    <td><button class="btn btn-outline-success">Edit</button></td>
+                    <td><button class="btn btn-outline-danger">Delete</button></td>
+                </tbody>
+            </table>
+        </div>
+        <div class="form hidden">
+            <h2>Adding / Editing a book</h2>
+            <input type="text" id="title" placeholder="Title">
+            <input type="text" id="author" placeholder="Author">
+            <input type="number" id="pages" placeholder="Pages" min="0">
+            <fieldset role="radiogroup">
+                <legend>Read Book</legend>
+                <label for="yes">
+                    <input type="radio" id="yes" name="read" checked>
+                    <span>Yes</span>
+                </label>
+                <label for="no">
+                    <input type="radio" id="no" name="read" value="no">
+                    <span>No</span>
+                  </label>
+            </fieldset>
+            <div class="button-group">
+                <button class="btn btn-outline-success" id="submit">Submit</button>
+                <button class="btn btn-outline-danger" id="return">Returns</button>
+            </div>
+        </div>
+    </main>
+
+    <!--Bootstrap JS CDN-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="/js/custom.js"></script>
+</body>
+</html>
